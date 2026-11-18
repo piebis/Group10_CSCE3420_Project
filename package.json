@@ -1,0 +1,13 @@
+{
+  "name": "borrowbuddy-csce3420",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BorrowBuddy - campus item lending web application for CSCE 3420",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed-demo.js",
+    "test": "node tests.js"
+  },
+  "engines": {"node": ">=18"},
+  "license": "UNLICENSED"
+}

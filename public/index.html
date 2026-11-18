@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#132636" />
+  <meta name="description" content="BorrowBuddy helps students lend and borrow useful items across campus." />
+  <title>BorrowBuddy | Share more. Buy less.</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <button type="button" class="brand" data-nav="browse" aria-label="BorrowBuddy home">
+        <span class="brand-icon" aria-hidden="true">↗</span><span>borrow<span class="brand-accent">buddy</span><small>CAMPUS LENDING</small></span>
+      </button>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <button class="nav-link current" data-nav="browse">Explore</button>
+        <button class="nav-link" data-nav="listings">My listings</button>
+        <button class="nav-link" data-nav="loans">My loans <span class="notification-dot" id="request-count" hidden></span></button>
+      </nav>
+      <div class="header-actions" id="header-actions"></div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap" id="app-content" aria-live="polite">
+      <div class="loading-state"><span class="spinner"></span> Getting BorrowBuddy ready...</div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span><strong>borrowbuddy</strong> <span class="footer-sub">Student-to-student. Borrow responsibly.</span></span>
+      <span>CSCE 3420 · University of North Texas · Class project demo</span>
+    </div>
+  </footer>
+  <div id="modal-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
